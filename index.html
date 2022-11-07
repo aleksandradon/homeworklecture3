@@ -6,7 +6,7 @@
 <body>
 
 <div>
-  <video width="640" controls>
+  <video id="vid" autoplay>
     <source src="promo.mp4" type="video/mp4">
     <source src="promo.ogv" type="video/ogv">
     <source src="promo.ogg" type="video/ogg">
@@ -14,7 +14,7 @@
   </video>
 </div>
 
-<form>
+<form action="action.php">
   <fieldset>
     <legend>Contact by email</legend>
     <h2>Please select the topic you would like to contact us about. So, we can serve you better and faster.</h2>
@@ -33,9 +33,10 @@
         <option value="4">Other question </option>
     </select><br><br>
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="email"><br><br>
+    <input type="email" id="email" name="email" placeholder="Email"><br><br>
     <label for="email">Upload a file</label>
     <input type="file" id="myfile" name="myfile">
+    <input type="submit" value="Submit" />
   </fieldset>
 </form>
 
